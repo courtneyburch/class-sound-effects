@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Effects for Teachers</title>
+    <link rel="stylesheet" href="styles.css"
+</head>
+<body>
+    <header>Click button to play sound!</header>
+    <div class="button">
+      
+          <input type="button" value="Crowd Laugh" onclick="play('crowd-laugh')">
+          <audio id="crowd-laugh" src="sounds/big-crowd-laughter.wav"></audio>
+      
+    </div>
+    <div class="button">
+      
+        <input type="button" value="Dad Joke Laugh" onclick="play('dad-joke-laugh')">
+        <audio id="dad-joke-laugh" src="sounds/dad-joke-laugh.wav"></audio>
+    
+    </div>
+    <div class="button">
+      
+        <input type="button" value="Evil Laugh" onclick="play('evil-laugh')">
+        <audio id="evil-laugh" src="sounds/evil_laugh.wav"></audio>
+    
+    </div>
+    <div class="button">
+      
+        <input type="button" value="Applause" onclick="play('applause')">
+        <audio id="applause" src="sounds/applause.wav"></audio>
+    
+    </div>
+    <div class="button">
+      
+        <input type="button" value="What" onclick="play('what')">
+        <audio id="what" src="sounds/what.mp3"></audio>
+    
+    </div>
+
+    <div class="button">
+      
+        <input type="button" value="Heavenly Choir" onclick="play('heavenly-choir')">
+        <audio id="heavenly-choir" src="sounds/heavenly-choir.mp3"></audio>
+    
+    </div>
+
+    <div class="button">
+      
+        <input type="button" value="Sad Trombone" onclick="play('sad-trombone')">
+        <audio id="sad-trombone" src="sounds/the-price-is-right-losing-horn.mp3"></audio>
+    
+    </div>
+
+   
+    <div class="button">
+      
+        <input type="button" value="Law and Order" onclick="play('law-and-order')">
+        <audio id="law-and-order" src="sounds/dun_dun.mp3"></audio>
+    
+    </div>
+
+    <script>
+        function play(element) {
+          var audio = document.getElementById(element);
+          audio.play();
+        }
+      </script>
+
+</body>
+</html>
